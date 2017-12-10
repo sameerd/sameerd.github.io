@@ -1,1 +1,2 @@
-theme: jekyll-theme-modernist
+theme: minima
+remote-theme: jekyll-theme-modernist
