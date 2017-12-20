@@ -1,5 +1,6 @@
-theme: minima
 remote-theme: jekyll-theme-modernist
+theme: jekyll-theme-modernist
+#theme: minima
 
 # Site wide configuration
 
