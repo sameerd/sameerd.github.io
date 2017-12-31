@@ -1,6 +1,5 @@
-remote-theme: jekyll-theme-modernist
-theme: jekyll-theme-modernist
-#theme: minima
+remote-theme: minima
+theme: minima
 
 # Site wide configuration
 
@@ -23,6 +22,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+
+github: [metadata]
 
 kramdown:
   input: GFM
