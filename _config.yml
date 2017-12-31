@@ -4,9 +4,9 @@ theme: jekyll-theme-modernist
 
 # Site wide configuration
 
-title: Sameer DCosta's Blog
+title: Sameer D'Costa
 locale: en_US
-description: Random code and snippets
+description: Learning from Data
 logo: site-logo.png
 search: true
 url: http://localhost:4000
