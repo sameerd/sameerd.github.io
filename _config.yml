@@ -3,7 +3,9 @@ theme: minima
 
 # Site wide configuration
 
-title: Sameer D'Costa
+title: Sameer D'Costa Blog
+author: Sameer D'Costa
+github_username: sameerd
 locale: en_US
 description: Learning from Data
 logo: site-logo.png
@@ -52,7 +54,7 @@ owner:
   facebook: #username
   github: sameerd
   stackexchange: https://stackoverflow.com/users/342362/sameer
-  linkedin: #username
+  linkedin: sameerdcosta
   instagram: #username
   flickr: #username
   tumblr: #username
