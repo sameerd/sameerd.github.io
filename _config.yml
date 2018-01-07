@@ -10,7 +10,7 @@ locale: en_US
 description: Learning from Data
 logo: site-logo.png
 search: true
-url: http://localhost:4000
+url: https://sameerd.github.io
 
 # Jekyll configuration
 
