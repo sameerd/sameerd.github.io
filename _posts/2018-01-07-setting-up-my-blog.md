@@ -24,20 +24,19 @@ Here is a test of mathjax inline \\( e^{i\pi} + 1 = 0 \\).
 
 Let's try out `R` syntax highlighting
 
-{% highlight R %}
+```R
 # Testing hello world
 library(MASS)
 x <- "This is a string : Hello world!"
 print(x)
-{% endhighlight %}
+```
 
 
 How about `python` syntax highlighting
-{% highlight python %}
+```python
 # Testing hello world
+import datetime
 x = "This is a string : Hello world!"
 print(x)
-{% endhighlight %}
-
-
+```
 
