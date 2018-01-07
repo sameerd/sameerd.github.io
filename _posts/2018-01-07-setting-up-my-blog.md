@@ -3,7 +3,7 @@ layout: post
 title:  "Setting up my Blog!"
 date:   2018-01-07 06:17:04 -0600
 mathjax: true
-categories: blog update
+tags: blog
 ---
 
 I'm trying to setup a blog with with many moving parts : `jekyll`, `blogdown`,
