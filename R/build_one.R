@@ -12,7 +12,7 @@ local({
   d = gsub('^[[:punct:]]*_|[.][a-zA-Z]+$', '', a[1])
   knitr::opts_chunk$set(
     fig.path   = sprintf('figure/%s/', d),
-    cache.path = sprintf('cache/%s/', d)
+    cache.path = sprintf('R/cache/%s/', d)
   )
   # set where you want to host the figures (I store them in my Dropbox folder
   # served via Updog.co, but you might prefer putting them in GIT)
