@@ -20,7 +20,7 @@ together to get them to work well.
 I'm going to test out a few things including making sure that plots and
 equations show up on the website. The code below mainly follows some [example
 code by Jeromy Anglin](https://gist.github.com/jeromyanglim/2716336) that I
-found while googling around.
+found while learning online. 
 
 
 ## Prepare for analyses
@@ -115,7 +115,7 @@ Note that unlike traditional Sweave, there is no need to write `fig=TRUE`.
 
 
 ### `ggplot2` plot
-Ggplot2 plots work well:
+ggplot plots work well:
 
 
 {% highlight r %}
@@ -194,6 +194,45 @@ and removes any preceding text from console output (`comment=""`; the default is
 6 6 5.89
 {% endhighlight %}
 
+### Test syntax highlighting
+
+
+{% highlight r %}
+library(MASS)
+MASS::fbeta
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## function (x, alpha, beta) 
+## {
+##     x^(alpha - 1) * (1 - x)^(beta - 1)
+## }
+## <bytecode: 0x3c85390>
+## <environment: namespace:MASS>
+{% endhighlight %}
+
+
+
+{% highlight r %}
+# testing a comment
+print(paste("This is a test", "of string coloring", sep=" "))
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## [1] "This is a test of string coloring"
+{% endhighlight %}
+
+
+
+{% highlight r %}
+a <- c(1,2,3)
+b <- "red"
+{% endhighlight %}
+
 
 
 ### Control figure size
@@ -204,7 +243,7 @@ The following is an example of a smaller figure using `fig.width` and `fig.heigh
 plot(x)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-9](/figure/posts/2018-01-12-R-markdown-to-jekyll/unnamed-chunk-9-1.png)
+![plot of chunk unnamed-chunk-10](/figure/posts/2018-01-12-R-markdown-to-jekyll/unnamed-chunk-10-1.png)
 
 
 {% highlight r %}
