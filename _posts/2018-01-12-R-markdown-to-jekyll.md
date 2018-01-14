@@ -305,7 +305,7 @@ Let's quote some stuff:
 
 
 ### Equivalent of Sexpr
-**Question:** I asked on Stack Overvlow about [whether there an R Markdown equivalent to Sexpr in Sweave?](http://stackoverflow.com/q/10629416/180892).
+**Question:** Is there [an R Markdown equivalent to Sexpr in Sweave?](http://stackoverflow.com/q/10629416/180892).
 
 **Answer:** Include the code between brackets of "backick r space" and "backtick". 
-E.g., in the source code I have calculated 2 + 2 = 4 .
+E.g., R calculates this in the source code inline 2 + 2 = 4 .
