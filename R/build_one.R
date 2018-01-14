@@ -9,8 +9,7 @@ local({
 
   # input/output filenames are passed as two additional arguments to Rscript
   a = commandArgs(TRUE)
-  d = gsub('_post', 'post', a[1])
-  d = gsub('^_|[.][a-zA-Z]+$', '', d)
+  d = gsub('^[[:punct:]]*_|[.][a-zA-Z]+$', '', a[1])
   knitr::opts_chunk$set(
     fig.path   = sprintf('figure/%s/', d),
     cache.path = sprintf('cache/%s/', d)
