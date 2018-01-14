@@ -79,7 +79,7 @@ Note that unlike traditional Sweave, there is no need to write `fig=TRUE`.
 ggplot plots work well:
 
 ```{r ggplot2ex}
-qplot(x, y, data=df)
+qplot(x, y, data=df, geom="point") + geom_line(colour="red")
 ```
 
 ## R Code chunk features
@@ -197,7 +197,8 @@ A  | B | C
 ### Images
 Here's an example image:
 
-![image from redmond barry building unimelb](http://i.imgur.com/RVNmr.jpg)
+![Goddess Hathor giving an Ankh to Nefertari, by unknown, Wikipedia, Public
+Domain](https://upload.wikimedia.org/wikipedia/commons/1/1d/Ankh_isis_nefertari.jpg)
 
 
 ### Code

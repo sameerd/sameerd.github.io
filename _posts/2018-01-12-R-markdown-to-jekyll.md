@@ -119,7 +119,7 @@ ggplot plots work well:
 
 
 {% highlight r %}
-qplot(x, y, data=df)
+qplot(x, y, data=df, geom="point") + geom_line(colour="red")
 {% endhighlight %}
 
 ![plot of chunk ggplot2ex](/figure/posts/2018-01-12-R-markdown-to-jekyll/ggplot2ex-1.png)
@@ -209,7 +209,7 @@ MASS::fbeta
 ## {
 ##     x^(alpha - 1) * (1 - x)^(beta - 1)
 ## }
-## <bytecode: 0x3c85390>
+## <bytecode: 0x3caf490>
 ## <environment: namespace:MASS>
 {% endhighlight %}
 
@@ -305,7 +305,8 @@ A  | B | C
 ### Images
 Here's an example image:
 
-![image from redmond barry building unimelb](http://i.imgur.com/RVNmr.jpg)
+![Goddess Hathor giving an Ankh to Nefertari, by unknown, Wikipedia, Public
+Domain](https://upload.wikimedia.org/wikipedia/commons/1/1d/Ankh_isis_nefertari.jpg)
 
 
 ### Code
