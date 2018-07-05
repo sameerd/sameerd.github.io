@@ -2,5 +2,9 @@
 ---
 
 .tags {
-    font-size: 50%;
+    font-size: 75%;
+    font-style: normal;
+    color: #000000;
+    background-color: #f9f2f4;
+    border-radius: 4px;
 }
