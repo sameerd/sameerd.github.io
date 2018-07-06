@@ -19,14 +19,11 @@ data$prop=apply(data , 1 , my_fun)
  
 ggplot(data, aes(x=Year, y=prop, fill=Sector)) + 
     geom_area(alpha=0.6 , size=1, colour="black") + 
-    theme(axis.title.x=element_blank(), 
-          axis.text.x=element_blank(),
-          axis.ticks.x=element_blank(),
-          axis.title.y=element_blank(),
-          axis.text.y=element_blank(),
-          axis.ticks.y=element_blank(),
-          legend.position="none"
-          ) +
+    theme_void() +
+    theme(
+        legend.title=element_blank(),
+        legend.text=element_blank()
+    ) +
     coord_fixed(ratio=1 / 3.)
 ggsave("../assets/banner.png", width=6, height=2)
 
