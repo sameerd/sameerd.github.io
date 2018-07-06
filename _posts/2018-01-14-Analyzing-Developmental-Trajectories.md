@@ -27,7 +27,9 @@ males from a working area of london. Data collection began in the early 60s
 when the boys were 8 years old and continued till they were around 32. It
 included criminal convictions and measured variables related to a number of
 factors including psychological makeup, family circumstances, parenting
-behavior and performance in school/work.
+behavior and performance in school/work. <a title="By Diliff [CC BY-SA 3.0 
+ (https://creativecommons.org/licenses/by-sa/3.0
+) or GFDL (http://www.gnu.org/copyleft/fdl.html)], from Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Emmanuel_College_Front_Court,_Cambridge,_UK_-_Diliff.jpg"><img width="256" alt="Emmanuel College Front Court, Cambridge, UK - Diliff" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Emmanuel_College_Front_Court%2C_Cambridge%2C_UK_-_Diliff.jpg/256px-Emmanuel_College_Front_Court%2C_Cambridge%2C_UK_-_Diliff.jpg"></a>
 
 The second dataset is a study of 1037 White males of French ancestry. This also
 measures similar variables to the Cambridge study. 
