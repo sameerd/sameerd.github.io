@@ -16,8 +16,7 @@
     max-width: 100%; 
 }
 
-/* All images inside paragraphs are floated right */
-p img {
+img[src$='#img-floatright'] {
     float: right;
 }
 
