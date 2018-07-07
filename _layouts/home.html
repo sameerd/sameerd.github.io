@@ -18,13 +18,12 @@ layout: default
           <span class="post-meta">{{ post.date | date: date_format }}</span>
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            <span>[
+            <span>{% include tag-icon.html %} [
               {% for tag in post.tags %}
                 {% capture tag_name %}{{ tag }}{% endcapture %}
                 <a href="/tag/{{ tag_name }}"><code class="tags"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
               {% endfor %}
             ]</span>
-
             {{ post.excerpt }}
           </h3>
         </li>
