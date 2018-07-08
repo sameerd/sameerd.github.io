@@ -4,15 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This is a personal blog where I write about data science, statistics and
+programming. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I completed a Ph.D. in Mathematics in 2006 from the University of Chicago. My
+thesis topic was in Algebraic Geometry - *The Trace of Frobenius for an
+Ordinary Elliptic Curve*. Then I spent nearly 10 years as a quant researcher /
+trader in finance. At my most recent job I was a data scientist at a large
+academic hospital in the Chicago region. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I have a passion for applying statistics and algorithms to get insights from
+data. 
 
-
-[jekyll-organization]: https://github.com/jekyll
