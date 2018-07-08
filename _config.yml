@@ -45,13 +45,17 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 excerpt_separator: <!--more-->
 
+comments:
+   provider: disqus
+disqus: 
+   shortname: sameerd-github-io
 
 # Site owner
 owner:
   name: Sameer D'Costa 
   avatar: bio-photo.jpg
   email: sameerdcosta@gmail.com
-  disqus-shortname: sameerd-github-io
+  disqus.shortname: sameerd-github-io
   twitter: #username
   facebook: #username
   github: sameerd
@@ -69,3 +73,5 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
+
+
