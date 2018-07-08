@@ -169,7 +169,7 @@ x | y
 10 | 12.42
 
 ### Control output display
-The folllowing code supresses display of R input commands (i.e., `echo=FALSE`)
+The following code suppresses display of R input commands (i.e., `echo=FALSE`)
 and removes any preceding text from console output (`comment=""`; the default is `comment="##"`).
 
     
@@ -209,7 +209,7 @@ MASS::fbeta
 ## {
 ##     x^(alpha - 1) * (1 - x)^(beta - 1)
 ## }
-## <bytecode: 0x3caf490>
+## <bytecode: 0x20fe768>
 ## <environment: namespace:MASS>
 {% endhighlight %}
 
@@ -254,7 +254,7 @@ plot(x)
 
 ## Basic markdown functionality
 For those not familiar with standard [Markdown](http://daringfireball.net/projects/markdown/), the following may be useful.
-See the source code for how to produce such points. However, RStudio does include a Markdown quick reference button that adequatly covers this material.
+See the source code for how to produce such points. However, RStudio does include a Markdown quick reference button that adequately covers this material.
 
 ### Dot Points
 Simple dot points:

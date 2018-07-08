@@ -23,7 +23,7 @@ some code in `R` to work through the datasets.
 ## Datasets 
 There are two interesting datasets associated with this paper. The first is
 from the Cambridge study of Delinquint Development. It tracked 411 British
-males from a working area of london. Data collection began in the early 60s
+males from a working area of London. Data collection began in the early 60s
 when the boys were 8 years old and continued till they were around 32. It
 included criminal convictions and measured variables related to a number of
 factors including psychological makeup, family circumstances, parenting
@@ -119,7 +119,7 @@ ggplot(cambridge_long, aes(Age, OffCount)) +
 
 ![plot of chunk mean_off_count](/figure/posts/2018-01-14-Analyzing-Developmental-Trajectories/mean_off_count-1.png)
 
-It looks like males commit alot of offenses in the mid/late teens compared to
+It looks like males commit a lot of offenses in the mid/late teens compared to
 the other years. 
 
 
