@@ -28,3 +28,9 @@ img[src$='#img-floatright'] {
     padding-right: 5px;
     vertical-align: middle;
 }
+
+.taglist {
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+}
