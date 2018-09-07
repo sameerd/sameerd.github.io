@@ -12,6 +12,8 @@ logo: site-logo.png
 search: true
 url: https://sameerd.github.io
 
+future: false
+
 # Jekyll configuration
 
 permalink:   /:categories/:title/
