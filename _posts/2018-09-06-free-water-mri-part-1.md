@@ -76,13 +76,22 @@ $$\frac{S_t}{S_0} = exp(-b ADC). $$
 Here the \\(b\\) term depends on the direction of the pulse, the time duration
 of the pulse, the time duration between two pulses, the strength of the pulse
 etc.  All these can be fixed and so for a given sequence we can gather all
-those terms into a constant \\(b\\). The \\(ADC\\) term is the average
-diffusion coefficient and it can be estimated if we know the values of
-\\(S_t\\), \\(S_0\\) and \\(b\\).
+those terms into a constant \\(b\\). The \\(ADC\\) term is the _apparent
+diffusion coefficient_ and it can be estimated if we know the values of
+\\(S_t\\), \\(S_0\\) and \\(b\\). 
+<a title="By Jian-Min Shen, Xian-Wu Xia, Wu-Gen Kang, Jian-Jun Yuan and Liang Sheng [CC BY 2.0 
+ (https://creativecommons.org/licenses/by/2.0
+)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Cerebral_infarction_after_4_hours_on_ADC_MRI.jpg"><img width="128" alt="Cerebral infarction after 4 hours on ADC MRI" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Cerebral_infarction_after_4_hours_on_ADC_MRI.jpg#img-floatright"></a>
+There is greater loss of signal with the long exposures and so the left hand
+side of the equation above is between 0 and 1. This gives us a map of ADC
+values at every voxel and we can plot that to get a diffusion weighted image.
+This is something new and interesting and gives us different information from
+just the short exposures.
 
 
 ### Diffusion Tensor Imaging (DTI)
 
+Diffusion tensor imaging extends 
 
 
 ### References
