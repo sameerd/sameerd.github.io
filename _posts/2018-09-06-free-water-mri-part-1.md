@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Free Water and MRI Part 1"
-date:   2019-09-06 06:17:04 -0600
+date:   2018-09-06 06:17:04 -0600
 mathjax: true
 tags: MRI
 ---
