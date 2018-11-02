@@ -76,54 +76,45 @@ $$\frac{S_t}{S_0} = exp(-b ADC). $$
 Here the \\(b\\) term depends on the direction of the pulse, the time duration
 of the pulse, the time duration between two pulses, the strength of the pulse
 etc.  All these can be fixed and so for a given sequence we can gather all
-those terms into a constant \\(b\\). The \\(ADC\\) term is a constant and is
-called the _apparent diffusion coefficient_ and it can be estimated if we know
-the values of \\(S_t\\), \\(S_0\\) and \\(b\\). 
+those terms into a constant \\(b\\). The \\(ADC\\) term is also a constant and
+is called the _apparent diffusion coefficient_. It can be estimated if we
+know the values of \\(S_t\\), \\(S_0\\) and \\(b\\). 
 
 <a title="By Jian-Min Shen, Xian-Wu Xia, Wu-Gen Kang, Jian-Jun Yuan and Liang Sheng [CC BY 2.0]" href="https://commons.wikimedia.org/wiki/File:Cerebral_infarction_after_4_hours_on_ADC_MRI.jpg"><img width="128" alt="Cerebral infarction after 4 hours on ADC MRI" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Cerebral_infarction_after_4_hours_on_ADC_MRI.jpg#img-floatright"></a>
 
-There is greater loss of signal with the long exposures and so the left hand
-side of the equation above is between 0 and 1. This gives us a map of ADC
-values at every voxel and we can plot that to get a diffusion weighted image.
-This is something new and interesting and gives us different information from
-just the short exposures.
+There is greater loss of signal with the long exposures \\( S_t < S_0 \\) and
+so the left hand side of the equation above is between 0 and 1. This gives us a
+map of ADC values at every voxel and we can plot that to get a diffusion
+weighted image.  (see the image on the right) This is something new and
+interesting and gives us different information from just the short exposures.
 
+The diffusion coefficient of water at body temperature is \\( 3 x 10^{-3}
+mm^2/s  \\). `Free water` is water that is not restricted by surrounding
+tissue. If we have a voxel that contains free water then we will probably get
+an _ADC_ value for that voxel that is close to the diffusion coefficient of
+water. 
 
 ### Diffusion Tensor Imaging (DTI)
 
-Diffusion tensor imaging extends 
+Diffusion tensor imaging extends this concept of an _apparent diffusion
+coefficient_ to three dimensions. This will tell us how the diffusion is
+happening in 3D space.  Here we let \\(b\\) be a constant that depends on the
+pulse strength, duration and timing between pulses but we do not let it depend
+on the gradient direction. It is a constant for a given pulse sequence and it
+can be calculated quite precisely. We now have a slightly different formula for
+the signal decay. 
+
+$$\frac{S_t}{S_0} = exp(-b q^T D q). $$
+
+Here, just like before, \\( S_t \)) and \\( S_0 \\) are the signal intensities
+for the long exposure and the short exposure respectively. \\(q\\) is now a 3x1
+vector that represents the direction of the pulse (gradient). \\( D \\) is now
+a 3x3 positive definite symmetric matrix that generalizes the apparent
+diffusion coefficient. 
 
 
 ### References
 
 1. [Wikipedia - Magnetic Resonance Imaging](https://en.wikipedia.org/wiki/Magnetic_resonance_imaging)
 
-
-### Mathjax
-Lets test out [mathjax](https://www.mathjax.org) so that `LaTeX`  equations
-will render in a browser. 
-
-$$ \sum_{n=1}^{\infty} \frac{1}{2^n} = 1. $$
-
-Here is a test of mathjax inline \\( e^{i\pi} + 1 = 0 \\).
-
-### Syntax highlighting
-
-Let's try out `R` syntax highlighting
-
-```R
-# Testing hello world
-library(MASS)
-x <- "This is a string : Hello world!"
-print(x)
-```
-
-
-How about `python` syntax highlighting
-```python
-# Testing hello world
-import datetime
-x = "This is a string : Hello world!"
-print(x)
-```
 
