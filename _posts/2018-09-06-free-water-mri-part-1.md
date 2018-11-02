@@ -66,6 +66,21 @@ we can make guesses about how the player is moving. This is analogous to what
 Diffusion imaging is doing to figure out how the water molecules are moving in
 the brain.
 
+The math here depends on complicate physics (which I do not understand) however
+the final answers are easy to understand and interpret. For a given `voxel` (3d
+version of a pixel), we have the following formula that relates the signal
+for a short exposure \\(S_0\\) to a signal with a longer exposure \\(S_t\\). 
+
+$$\frac{S_t}{S_0} = exp(-b ADC). $$
+
+Here the \\(b\\) term depends on the direction of the pulse, the time duration
+of the pulse, the time duration between two pulses, the strength of the pulse
+etc.  All these can be fixed and so for a given sequence we can gather all
+those terms into a constant \\(b\\). The \\(ADC\\) term is the average
+diffusion coefficient and it can be estimated if we know the values of
+\\(S_t\\), \\(S_0\\) and \\(b\\).
+
+
 ### Diffusion Tensor Imaging (DTI)
 
 
