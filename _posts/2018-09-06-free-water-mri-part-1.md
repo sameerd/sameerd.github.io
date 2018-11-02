@@ -6,6 +6,8 @@ mathjax: true
 tags: MRI
 ---
 
+# Writing in progress
+
 [Magnetic resonance imaging
 (MRI)](https://en.wikipedia.org/wiki/Magnetic_resonance_imaging) is a medical
 imaging technique which uses magnetic fields to look at organs in a living
@@ -22,7 +24,7 @@ the water molecules are in and thus build a map of the brain.
 
 ### MRI
 
-<a title="By KieranMaher at English Wikibooks [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:T1t2PD.jpg"><img width="512" alt="T1t2PD" src="https://upload.wikimedia.org/wikipedia/commons/0/03/T1t2PD.jpg"></a>
+<a title="By KieranMaher at English Wikibooks [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:T1t2PD.jpg"><img width="512" alt="T1t2PD" src="https://upload.wikimedia.org/wikipedia/commons/0/03/T1t2PD.jpg#img-center"></a>
 
 [Magnetic resonance imaging
 (MRI)](https://en.wikipedia.org/wiki/Magnetic_resonance_imaging) machines are
