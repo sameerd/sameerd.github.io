@@ -6,7 +6,7 @@ mathjax: true
 tags: MRI
 ---
 
-# Writing in progress
+# Writing in progress...
 
 [Magnetic resonance imaging
 (MRI)](https://en.wikipedia.org/wiki/Magnetic_resonance_imaging) is a medical
@@ -22,7 +22,7 @@ the water molecules are in and thus build a map of the brain.
 
 <!--more-->
 
-### MRI
+### Magnetic Resonance Imaging (MRI)
 
 <a title="By KieranMaher at English Wikibooks [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:T1t2PD.jpg"><img width="512" alt="T1t2PD" src="https://upload.wikimedia.org/wikipedia/commons/0/03/T1t2PD.jpg#img-center"></a>
 
@@ -47,7 +47,7 @@ different MRI sequences bring different structures of the brain into focus.
 Diffusion weighting differs the weighting schemes above to give images that are
 overexposed and then tries to use statistics to reconstruct an image. 
 
-Here is an analogy.Suppose we have to design an algorithm to look at a picture
+Here is an analogy. Suppose we have to design an algorithm to look at a picture
 of a soccer player playing a soccer game. We want the algorithm to look at this
 single picture and tell us whether the player runs around alot or doesn't run
 around much.  This would be almost impossible to do using a single picture -
@@ -58,12 +58,13 @@ make this decision.  One thing you could do would be to lengthen the exposure
 the single picture you take. If the player is running around alot then you
 should see a streak across your overexposed image. If the player is mostly
 standing in a single spot then the overexposed image will appear blurry but you
-should mostly be able to detect the player at a single location. 
-![Running Fast - https://www.flickr.com/photos/artant/3247451570](/figure/posts/2018-09-06-free-water-mri-part-1/blurry_runner.jpg#img-floatright "Copyright CC BY-NC-ND 2.0") 
-
-This is quite a clever idea and using statistics we can make guesses about how
-the player is moving. This is analogous to what Diffusion imaging is doing to
-figure out how the water molecules are moving in the brain.
+should mostly be able to detect the player at a single location.  ![Running
+Fast -
+https://www.flickr.com/photos/artant/3247451570](/figure/posts/2018-09-06-free-water-mri-part-1/blurry_runner.jpg#img-floatright
+"Copyright CC BY-NC-ND 2.0") This is quite a clever idea and using statistics
+we can make guesses about how the player is moving. This is analogous to what
+Diffusion imaging is doing to figure out how the water molecules are moving in
+the brain.
 
 ### Diffusion Tensor Imaging (DTI)
 
