@@ -38,32 +38,28 @@ direction of the magnetic fields in what is known as an `MRI sequence`. There
 are many different types of sequences and they give us different images for the
 same object. 
 
-
-Here are different weighting schemes (T1, T2, and PD) which show the same
-region of the brain. See how the images look very different as the different
-MRI sequences bring different structures of the brain into focus. 
+The image above has different weighting schemes (T1, T2, and PD) which show the
+same region of the brain. See how the images look very different as the
+different MRI sequences bring different structures of the brain into focus. 
 
 ### Diffusion Weighting
 
 Diffusion weighting differs the weighting schemes above to give images that are
 overexposed and then tries to use statistics to reconstruct an image. 
 
-### Analogy for Diffusion Weighting
-
-Suppose we have to design an algorithm to look at a picture of a soccer player
-playing a soccer game. We want the algorithm to look at this single picture and
-tell us whether the player runs around alot or doesn't run around much. 
-This would be almost impossible to do using a single picture - wouldn't it? If
-we were able to take multiple pictures in sequence of the same player in action
-we could get something similar to video and then it would be an easier task.
-But what if you were forced to only use a single picture to make this decision.
-One thing you could do would be to lengthen the exposure the single picture you
-take. If the player is running around alot then you should see a streak across
-your overexposed image. If the player is mostly standing in a single spot then
-the overexposed image will appear blurry but you should mostly be able to detect
-the player at a single location. 
-
-![Running Fast - https://www.flickr.com/photos/artant/3247451570](/figure/posts/2018-09-06-free-water-mri-part-1/blurry_runner.jpg "Copyright CC BY-NC-ND 2.0") 
+Here is an analogy.Suppose we have to design an algorithm to look at a picture
+of a soccer player playing a soccer game. We want the algorithm to look at this
+single picture and tell us whether the player runs around alot or doesn't run
+around much.  This would be almost impossible to do using a single picture -
+wouldn't it? If we were able to take multiple pictures in sequence of the same
+player in action we could get something similar to video and then it would be
+an easier task.  But what if you were forced to only use a single picture to
+make this decision.  One thing you could do would be to lengthen the exposure
+the single picture you take. If the player is running around alot then you
+should see a streak across your overexposed image. If the player is mostly
+standing in a single spot then the overexposed image will appear blurry but you
+should mostly be able to detect the player at a single location. 
+![Running Fast - https://www.flickr.com/photos/artant/3247451570](/figure/posts/2018-09-06-free-water-mri-part-1/blurry_runner.jpg#img-floatright "Copyright CC BY-NC-ND 2.0") 
 
 This is quite a clever idea and using statistics we can make guesses about how
 the player is moving. This is analogous to what Diffusion imaging is doing to
