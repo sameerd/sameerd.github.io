@@ -106,11 +106,22 @@ the signal decay.
 
 $$\frac{S_t}{S_0} = exp(-b q^T D q). $$
 
-Here, just like before, \\( S_t \)) and \\( S_0 \\) are the signal intensities
+Here, just like before, \\( S_t \\) and \\( S_0 \\) are the signal intensities
 for the long exposure and the short exposure respectively. \\(q\\) is now a 3x1
 vector that represents the direction of the pulse (gradient). \\( D \\) is now
 a 3x3 positive definite symmetric matrix that generalizes the apparent
 diffusion coefficient. 
+
+Now instead of trying to estimate one ADC coefficient per voxel we need to
+estimate a whole 3x3 matrix \\(D\\) for each voxel. 
+
+$$\begin{bmatrix} D_{xx} & D_{xy} & D_{xz} \\ D_{xy} & D_{yy} & D_{yz} \\ D_{xz} & D_{yz} & D_{zz}\end{bmatrix} $$
+
+Since the 3x3 matrix is symmetric we only need to estimate 6 values instead of
+9. Also we have an additional problem of making sure that the values we
+estimate form a positive definite matrix i.e. \\(q^T D q > 0 \\) for all
+non-zero values of q
+
 
 
 ### References
