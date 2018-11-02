@@ -88,7 +88,7 @@ map of ADC values at every voxel and we can plot that to get a diffusion
 weighted image.  (see the image on the right) This is something new and
 interesting and gives us different information from just the short exposures.
 
-The diffusion coefficient of water at body temperature is \\( 3 x 10^{-3}
+The diffusion coefficient of water at body temperature is \\( d = 3 x 10^{-3}
 mm^2/s  \\). `Free water` is water that is not restricted by surrounding
 tissue. If we have a voxel that contains free water then we will probably get
 an _ADC_ value for that voxel that is close to the diffusion coefficient of
@@ -110,22 +110,64 @@ Here, just like before, \\( S_t \\) and \\( S_0 \\) are the signal intensities
 for the long exposure and the short exposure respectively. \\(q\\) is now a 3x1
 vector that represents the direction of the pulse (gradient). \\( D \\) is now
 a 3x3 positive definite symmetric matrix that generalizes the apparent
-diffusion coefficient. 
+diffusion coefficient.  
 
-Now instead of trying to estimate one ADC coefficient per voxel we need to
+Now, instead of trying to estimate one ADC coefficient per voxel we need to
 estimate a whole 3x3 matrix \\(D\\) for each voxel. 
 
-$$\begin{bmatrix} D_{xx} & D_{xy} & D_{xz} \\ D_{xy} & D_{yy} & D_{yz} \\ D_{xz} & D_{yz} & D_{zz}\end{bmatrix} $$
+$$ D = \begin{bmatrix} D_{xx} & D_{xy} & D_{xz} \\ D_{xy} & D_{yy} & D_{yz} \\
+D_{xz} & D_{yz} & D_{zz}\end{bmatrix} $$
 
-Since the 3x3 matrix is symmetric we only need to estimate 6 values instead of
-9. Also we have an additional problem of making sure that the values we
+Since the 3x3 matrix is symmetric we only need to estimate 6 values instead of 9. 
+Also, we have the additional problem of making sure that the values we
 estimate form a positive definite matrix i.e. \\(q^T D q > 0 \\) for all
-non-zero values of q
+non-zero values of q.
 
+We know what \\(b\\) is and also the value of \\(S_0\\). If we have atleast 6
+different values of \\(q\\) and have the corresponding values of \\(S_t \\),
+then we can estimate \\(D\\) via regression and a system of equations. Making
+sure that the answer is positive definite is a harder and will require
+constraints on the solutions. 
+
+If we have a voxel with water unconstrained by surrounding tissue then we
+expect $$D = d I $$ where \\(d = 3 x 10^{-3} \\) and I is an identity 3x3
+matrix.
+
+### Free water Elimination 
+
+One problem we have is that voxels are quite large in practice (2mm x 2mm x
+2mm) isn't uncommon. This is large enough that the diffusion coefficient inside
+the voxel isn't homogenous. There might be a mixture of free water and tissue
+in that voxel and we need to figure out how to estimate how much free water and
+how much tissue. 
+
+$$\frac{S_t}{S_0} = f * exp(-b q^T D q) + (1 - f) * exp(-b d). $$
+
+Here all the symbols mean the same as above and the only new symbol is \\(f\\)
+which measure the volume fraction of this voxel that is made up of tissue. Now
+if we can find out what the value of $f$ is and also find the value of \\(D\\)
+then we can figure out how much free water \\( 1-f \\) is contained in each
+voxel. 
+
+If you have just one value of \\(b\\) then it is hard to estimate \\(f\\) and
+\\(D\\) as many solutions are likely to fit the equations. Choosing among them
+is hard. There are two approaches. 
+1. *Multi-shell* diffusion tensor imaging - where we vary the sequences of
+   pulses and so have different values of b. This reduces the number of
+   solutions down to 1 again. However this is more expensive and takes more time
+   in the MRI machine.  
+2. *Single-shell* diffusion tensor imaging with *constraints* - where we put
+   constraints on the possible solutions and reduce it down to one again. Of
+   course, we have the additional problem of trying to figure out whether the
+   solution we have is accurate or not as in most cases there is no ground truth. 
+
+In the next post we will look at some of the math behind a single shell free
+water elimination model. 
 
 
 ### References
 
 1. [Wikipedia - Magnetic Resonance Imaging](https://en.wikipedia.org/wiki/Magnetic_resonance_imaging)
-
+1. [Wikipedia - Diffusion MRI](https://en.wikipedia.org/wiki/Diffusion_MRI)
+1. [Free Water elimination and Mapping from Diffusion MRI - Pasternak et al. 2009](https://onlinelibrary.wiley.com/doi/epdf/10.1002/mrm.22055)
 
