@@ -22,6 +22,8 @@ the water molecules are in and thus build a map of the brain.
 
 ### MRI
 
+<a title="By KieranMaher at English Wikibooks [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:T1t2PD.jpg"><img width="512" alt="T1t2PD" src="https://upload.wikimedia.org/wikipedia/commons/0/03/T1t2PD.jpg"></a>
+
 [Magnetic resonance imaging
 (MRI)](https://en.wikipedia.org/wiki/Magnetic_resonance_imaging) machines are
 huge and expensive but they work on a simple principle -  _when certain atoms
@@ -34,7 +36,6 @@ direction of the magnetic fields in what is known as an `MRI sequence`. There
 are many different types of sequences and they give us different images for the
 same object. 
 
-![T1 vs T2 vs PD weighting](/figure/posts/2018-09-06-free-water-mri-part-1/T1t2PD.jpg)
 
 Here are different weighting schemes (T1, T2, and PD) which show the same
 region of the brain. See how the images look very different as the different
