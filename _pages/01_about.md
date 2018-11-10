@@ -14,8 +14,8 @@ I completed a Ph.D. in Mathematics in 2006 from the University of Chicago. My
 thesis topic was in Algebraic Geometry - *The Trace of Frobenius for an
 Ordinary Elliptic Curve*. Then I spent nearly 10 years as a quant researcher /
 trader in finance. At my most recent job I was a data scientist at a large
-academic hospital in the Chicago region. These days I do part time data science
-/ computing work.
+academic hospital in the Chicago region. These days I mostly do part time data
+science / computing work at research labs.
 
 I have a passion for applying statistics and algorithms to get insights from
 data. It is quite beautiful to see noisy data transformed into something

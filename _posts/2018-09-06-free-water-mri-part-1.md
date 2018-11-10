@@ -66,10 +66,11 @@ we can make guesses about how the player is moving. This is analogous to what
 Diffusion imaging is doing to figure out how the water molecules are moving in
 the brain.
 
-The math here depends on complicate physics (which I do not understand) however
-the final answers are easy to understand and interpret. For a given `voxel` (3d
-version of a pixel), we have the following formula that relates the signal
-for a short exposure \\(S_0\\) to a signal with a longer exposure \\(S_t\\). 
+The math here depends on complicated physics (which I do not fully understand)
+however the final formulas are easy to understand and interpret. For a given
+`voxel` (3d version of a pixel), we have the following formula that relates the
+signal for a short exposure \\(S_0\\) to a signal with a longer exposure
+\\(S_t\\). 
 
 $$\frac{S_t}{S_0} = exp(-b ADC). $$
 
@@ -88,7 +89,7 @@ map of ADC values at every voxel and we can plot that to get a diffusion
 weighted image.  (see the image on the right) This is something new and
 interesting and gives us different information from just the short exposures.
 
-The diffusion coefficient of water at body temperature is \\( d = 3 x 10^{-3}
+The diffusion coefficient of water at body temperature is \\( d = 3 \times 10^{-3}
 mm^2/s  \\). `Free water` is water that is not restricted by surrounding
 tissue. If we have a voxel that contains free water then we will probably get
 an _ADC_ value for that voxel that is close to the diffusion coefficient of
@@ -130,7 +131,7 @@ sure that the answer is positive definite is a harder and will require
 constraints on the solutions. 
 
 If we have a voxel with water unconstrained by surrounding tissue then we
-expect $$D = d I $$ where \\(d = 3 x 10^{-3} \\) and I is an identity 3x3
+expect $$D = d I $$ where \\(d = 3 \times 10^{-3} \\) and I is an identity 3x3
 matrix.
 
 ### Free water Elimination 
